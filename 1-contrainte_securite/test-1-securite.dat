@@ -1,0 +1,18 @@
+ /*
+Données du problème test-1.xlsx traduite en langage gmpl
+*/
+
+data;
+
+param n := 4; #Nombre de clients
+param m := 3; # Nombre de dépôt
+param B := 1 4 2 18 3 6 4 2;
+param A := 1 18 2 5 3 7;
+param C :  1  2  3  4 :=
+      1   21 36 43 20
+      2   60 30 50 43
+      3   18 10 48 72;
+
+param s := 2; # contrainte de sécurité
+
+end;
