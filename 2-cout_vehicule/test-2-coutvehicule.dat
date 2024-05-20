@@ -22,8 +22,8 @@ param C :  1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 :=
 
 param C1 := 42;
 param F1 := 300;
-param C2 := 20;
-# param C2 := 0;
+# param C2 := 20;
+param C2 := 0;
 param F2 := 140;
 
 end;
