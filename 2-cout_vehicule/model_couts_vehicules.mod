@@ -57,7 +57,10 @@ stock {i in 1..m} : sum {j in 1..n} x[i,j] <= A[i];
 #feasability : sum {i in 1..m} A[i] >= sum {j in 1..n} B[j];
 
 # vérifie combien de camion par trajet
-number_of_truck1 {i in 1..m, j in 1..n} : N1[i,j]*C1 +N2[i,j]*C2 >= x[i,j];
+number_of_truck1 {i in 1..m, j in 1..n} : N1[i,j]*C1 + N2[i,j]*C2 >= x[i,j];
+
+# Coupe pour optimisation
+coupe {i in 1..m, j in 1..n} : (N1[i,j]*C1 + N2[i,j]*C2) <= (x[i,j] + C1 + C2);
 
 solve;
 
